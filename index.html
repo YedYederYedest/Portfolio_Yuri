@@ -1,275 +1,266 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-  <!-- Put your site title here -->
-  <title>
-    Yuri Evgeni U. de Joya Portfolio
-  </title>
-
-  <meta name="description" content="Add small description of yourself.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yuri de Joya — Computer Engineering student and aspiring software developer based in Warsaw, Poland.">
+  <meta name="keywords" content="Yuri de Joya, portfolio, computer engineering, web development, JavaScript, React, TypeScript">
+  <meta name="theme-color" content="#09090b">
+  <title>Yuri de Joya | Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="./js/index.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ***** Header ***** -->
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Yuri de Joya home">YD<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Yuri de Joya</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>Computer Engineering Student Based in Warsaw, PL
-</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+    <div class="container hero">
+      <p class="eyebrow">COMPUTER ENGINEERING · WARSAW, POLAND</p>
+      <h1>Hi, I'm <span>Yuri <br>Evgeni U. de Joya</span></h1>
+      <p class="hero-copy">I’m a Computer Engineering student 
+        aiming 
+        interested in building thoughtful, accessible, and useful digital experiences.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+        <a class="button button-secondary" href="#contact">Get in touch</a>
       </div>
     </div>
   </header>
 
-  <main role="main">
+  <main id="main">
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">SELECTED PROJECTS</p>
+          <h2 id="work-title">My Work</h2>
+          <p>A few projects to showcase what I’m learning and building. Replace the sample descriptions and links with your real project details.
 
-    <!-- ***** Work ***** -->
+            THE THREE PROJECTS THAT I WILL SHOWCASE HERE ARE 1. Assembly Project - React Capstone Project 2. Tenzies Capstone Project 3. Claude Chef
 
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
+            MAKE SURE TO ALSO ADD SNIPPETS OF THE PROJECT 
+          </p>
+        </div>
+        <div class="project-grid">
+          
+          <!-- Assembly React Capstone Project -->
+          <article class="project-card">
+            <div class="project-number">01 / WEB</div>
+            <h3>Assembly Endgame</h3>
+            <p>A dashboard concept for keeping useful information and everyday tasks in one place.</p>
+            <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li></ul>
+            <div class="project-links">
 
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Personal Dashboard</h3>
-              <p>
-                A Chrome extension to help you focus and stay up-to-date.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
+              <!-- UPLOAD THE PROJECT ONLINE (DO IT WITH ALL THREE PROJECTS THAT'LL BE ATTACHED) -->
+              <a href="https://nisar.surge.sh" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+              
+              <!-- LINK TO SOURCE CODE IN GITHUB -->
+              <a href="https://github.com/nisarhassan12/portfolio" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
             </div>
-            <div class="work__image-box">
-              <img src="./images/dashboard-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
+          </article>
+          
+          <!-- Tenzies React Capstone Project  -->
+          <article class="project-card">
+            <div class="project-number">02 / TOOL</div>
+            <h3>Tenzies Game</h3>
+            <p>A project idea for generating secure passwords with options for length and character types.</p>
+            <ul class="tag-list"><li>JavaScript</li><li>UI Design</li><li>Accessibility</li></ul>
+            <div class="project-links">
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Password Generator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
+              <!-- UPLOAD THE PROJECT ONLINE (DO IT WITH ALL THREE PROJECTS THAT'LL BE ATTACHED) -->
+              <a href="https://nisar.surge.sh" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+              
+              <!-- LINK TO SOURCE CODE IN GITHUB -->
+              <a href="https://github.com/nisarhassan12/portfolio" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+            </div>
+          </article>
 
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/password.jpg" class="work__image" alt="Project 1" />
-            </div>
-          </div>
+          <!-- Claude Chef Project -->
+          <article class="project-card">
+            <div class="project-number">03 / APP</div>
+            <h3>Chef Claude</h3>
+            <p>A quiz application concept for practicing topics, tracking answers, and reviewing results.</p>
+            <ul class="tag-list"><li>React</li><li>CSS</li><li>API</li></ul>
+            <div class="project-links">
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Quizzical App</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
+              <!-- UPLOAD THE PROJECT ONLINE (DO IT WITH ALL THREE PROJECTS THAT'LL BE ATTACHED) -->
+              <a href="https://nisar.surge.sh" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+              
+              <!-- LINK TO SOURCE CODE IN GITHUB -->
+              <a href="https://github.com/nisarhassan12/portfolio" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
             </div>
-            <div class="work__image-box">
-              <img src="./images/quiz.jpg" class="work__image" alt="Project 3" />
-            </div>
-          </div>
+          </article>
+        
         </div>
       </div>
     </section>
 
-    <!-- ***** Clients ***** -->
-<!-- 
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+    <section class="section section-alt" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2 id="about-title">Curious by nature.<br>Building step by step.</h2>
+        </div>
+        <div class="about-copy">
+          <p>I’m studying Computer Engineering and developing my skills in software and web development. I enjoy learning how systems work and turning ideas into practical projects.</p>
+          <h1>AS OF WRITING THIS AT 1AM IN THE MORNING. REMOVE EDUCATION COLUMN IN NAVBAR
+            AND ADD EDUCATION AND CERTIFICATIONS IN ABOUT SECTION. MEANWHILE EDUCATION </h1>
+          <p>My current areas of interest include TypeScript, React, CSS, and building clear, user-friendly interfaces. This is starter copy—personalize it with your own interests, experience, and goals.</p>
+          <a class="button button-primary" href="./downloads/sample-cv.pdf" download="Yuri-de-Joya-Sample-CV.pdf">Download CV</a>
+          <p class="small-note">TAKE NOTE TO REMOVE THIS TAG AND REPLACE THE CV INSIDE downloads FOLDER WITH YOUR OWN AND UPDATED CV</p>
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <!-- ***** About ***** -->
+   <section class="section" id="experience" aria-labelledby="experience-title">
+  <div class="container">
 
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-           I'm a web developer and designer based out of London, UK. I love building apps that solve real-world problems, and that are delightful to use. My specialities include TypeScript, React JS, Tailwind CSS, and Styled Components.</p>
-            <p>My background is in teaching and marketing, and I have a bachelors degree in English from Kings College. I also have five adorable cats.</p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
+    <div class="section-heading">
+      <p class="eyebrow">WHAT I'VE DONE</p>
+      <h2 id="experience-title">Experience</h2>
+      <p>Selected professional, internship, volunteer, or project experience.</p>
+    </div>
+
+    <div class="experience-list">
+
+      <!-- Experience 1 -->
+      <article class="experience-card">
+
+        <!-- ALSO REMOVE THE H1 ONCE YOU'VE IMPLEMENTED THE CHANGES NEEDED -->
+        <h1>Prife International</h1>
+        <div class="experience-icon" aria-hidden="true">Add company image</div>
+
+        <div class="experience-main">
+          <div class="experience-topline">
+            <div>
+              <h3>Operations Assistant</h3>
+              <p class="experience-company">
+                Operations
+              </p>
+            </div>
+
+            <span class="pill">Current Role</span>
           </div>
 
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/jane.jpg" alt="" />
+          <p class="experience-description">
+            -Support day-to-day operations of the business
+            -Provide administrative support
+            -Maintain accurate records
+            -Assist with coordinating operational activities
+          </p>
+
+          <div class="experience-meta">
+            <span>On-Site</span>
+            <span>January 2026 – Present  (Add an svg) </span>
+          </div>
+        </div>
+      </article>
+
+
+      
+      <!-- Experience 2 -->
+      <article class="experience-card">
+                <!-- ALSO REMOVE THE H1 ONCE YOU'VE IMPLEMENTED THE CHANGES NEEDED -->
+        <h1>Rhenai Digital Workforce</h1>
+        <div class="experience-icon" aria-hidden="true">Add Company Image</div>
+
+        <div class="experience-main">
+          <div class="experience-topline">
+            <div>
+              <h3>Technical Sales & Automation Intern</h3>
+              <p class="experience-company">
+                Technical Sales & Automation
+              </p>
+            </div>
+
+            <span class="pill">Previous</span>
+          </div>
+
+          <p class="experience-description">
+            -Implementing RPA and Automation tools to enhance workflows
+            -Supporting business cases and sales discussion
+            -Promoting automation knowledge internally and externally
+            - Trancking trends in low-code, AI, and hyperautomation
+          </p>
+
+          <div class="experience-meta">
+            <span>Hybrid</span>
+            <span>(Add an svg) September 2025 – March 2026</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2 id="contact-title">Contact</h2>
+          <p>Have a question, an idea, or an opportunity to discuss? Send a message using the form or reach me through the links.</p>
+        </div>
+        <div class="contact-grid">
+          <aside class="contact-panel" aria-label="Contact details">
+            <h3>Contact details</h3>
+            <p class="muted-light">The best way to reach me is by email. You can also find me on LinkedIn.</p>
+            <a class="contact-method" href="mailto:yedevgenidejoya@gmail.com">
+              <span class="contact-symbol" aria-hidden="true">svg</span>
+              <span><small>Email</small><strong>yedevgenidejoya@gmail.com</strong></span>
+            </a>
+            <a class="contact-method" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <span class="contact-symbol" aria-hidden="true">svg</span>
+              <span><small>LinkedIn</small><strong>https://www.linkedin.com/in/yuri-evgeni-de-joya-7a8094310/</strong></span>
+            </a>
+            <div class="availability"><span class="status-dot"></span> Open to learning and collaboration</div>
+          </aside>
+
+          <div class="form-panel">
+            <h3>Send a message</h3>
+            <form id="contact-form" action="https://formspree.io/f/mzzappqa" method="POST">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="What is this about?" required>
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me a little about what you need..." required></textarea>
+              </div>
+              <button class="button button-primary submit-button" type="submit">Send message <span aria-hidden="true">↗</span></button>
+              <p class="form-note">NEED TO USE FORMSPREE WILL HAVE TO IMPLEMENT IT IN THIS PROJECT</p>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      
-      <!-- <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
-       -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top">YD<span>.</span></a>
+      <a href="#top">Back to top ↑</a>
     </div>
   </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
 </body>
-
 </html>
