@@ -1,0 +1,6 @@
+Links for Demo Projects:
+    Tenzies:
+    https://tenzies-project-kohl.vercel.app/
+
+    Assembly Endgame:
+    https://assembly-project-yed.vercel.app/
