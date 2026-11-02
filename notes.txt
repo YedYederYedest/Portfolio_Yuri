@@ -4,3 +4,6 @@ Links for Demo Projects:
 
     Assembly Endgame:
     https://assembly-project-yed.vercel.app/
+
+Once finished all the nitty and gritty details of the project, 
+transform it into a REACT project so that the HTML isn't so compact
