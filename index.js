@@ -27,13 +27,13 @@ window.addEventListener("keydown", handleFirstTab);
 ======================================== */
 
 const sections = [
-  { id: "headernav", file: "./html/headernav.html" },
-  { id: "work", file: "./html/work.html" },
-  { id: "about", file: "./html/about.html" },
-  { id: "experience", file: "./html/experience.html" },
-  { id: "contact", file: "./html/contact.html" },
-  { id: "gallery", file: "./html/gallery.html" },
-  { id: "footer", file: "./html/footer.html" }
+  { id: "headernav", file: "/html/headernav.html" },
+  { id: "work", file: "/html/work.html" },
+  { id: "about", file: "/html/about.html" },
+  { id: "experience", file: "/html/experience.html" },
+  { id: "contact", file: "/html/contact.html" },
+  { id: "gallery", file: "/html/gallery.html" },
+  { id: "footer", file: "/html/footer.html" }
 ];
 
 
@@ -130,7 +130,7 @@ function initializeGallery() {
 
   async function loadPhotos() {
     try {
-      const response = await fetch("./photos.json");
+      const response = await fetch("/photos.json");
 
       if (!response.ok) {
         throw new Error(`Failed to load photos: ${response.status}`);
